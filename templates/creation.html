@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Creation</title>
+    </head>
+    <style>
+        body{
+            padding: 0px;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1s ease-in;
+            color: rgb(55, 151, 78);
+            margin: 0;
+            background-image: url('creation.jpeg');
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .fade-in{
+            opacity: 0;
+        }
+        .container{
+            width: 60%;
+            margin: 0 auto;
+            text-align: justify;
+            padding: 20x;
+            border: 0.2cm solid black;
+            background-color: rgb(105, 203, 252);
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h1 style="text-align: center;">AI Creation</h1>
+            <p style="color: black;">
+                <b>Creation of LLM</b><br><br>
+                Step 1: Collecting Dataset<br>
+                The data collected for training is gathered from the internet, primarily from social media, websites, platforms, academic papers, etc. All this corpus of data ensures the training data is as classified as possible, eventually portraying the improved general cross-domain knowledge for large-scale language models.
+                <br><br>Step 2: Dataset Preprocessing and Cleaning<br>
+                As datasets are crawled from numerous web pages and different sources, the chances are high that the dataset might contain various yet subtle differences. So, it's crucial to eliminate these nuances and make a high-quality dataset for the model training.Standard preprocessing measures include:
+                <br>i. Resolving spelling mistakes.
+                <br>ii. Removing toxic/biased data.
+                <br>iii. Turning emojis into their text equivalent.
+                <br>iv. Data duplication.<br>
+                <br>Step 3: Preparing Data<br>
+                Dataset preparation is cleaning, transforming, and organizing data to make it ideal for machine learning. It is an essential step in any machine learning project, as the quality of the dataset has a direct impact on the performance of the model.
+                <br><br>Step 4: Defining The Model Architecture<br>
+                Often, researchers start with an existing Large Language Model architecture like GPT-3 accompanied by actual hyperparameters of the model. Next, tweak the model architecture/ hyperparameters/ dataset to come up with a new LLM.
+                <br><br>
+                Step 5: Hyperparameter Tuning<br>
+                Hyperparameter tuning is the process of selecting the optimal values for a machine learning model’s hyperparameters. Hyperparameters are settings that control the learning process of the model,including any or all of the following:
+                <br>i. Positional embeddings
+                <br>ii. Learning rate
+                <br>iii. Weight initialization
+                <br>iv. Optimizer
+                <br>v. Activation 
+                <br>vi. Loss function
+                <br>vii. Number of layers, parameters, and attention heads                
+                <br>viii. Dense vs. sparse layers group out
+                <br><br>Step 6: Evaluate the Model<br>
+                It is critical to evaluate LLMs accurately because:
+                Enterprises need to choose generative AI models to adopt. There are numerous base LLMs and there are many other variations of these models.
+                Once the models are chosen, they will be fine-tuned. Unless model performance is accurately measured, users can not be sure about what their efforts achieved.
+                Evaluation can be used for Performance assessment, model comparison, bias detection and mitigation, as well as user satisfaction and trust. Some benchmarks for LLM evaluation are MMLU-Pro, GPQA, MuSR etc.
+                <br><br>
+                Step 7: Deploy the Model
+                You can choose serverless technologies like AWS Lambda or Google Cloud Functions to deploy the model as a web service. Besides, you can use containerization technologies like Docker to package our model and its dependencies in a single container.
+                <br>
+                <div style="text-align: center;">
+                    <button onclick="navigateTo('index.html')" class="btn btn-primary" style="background-color: rgb(11, 179, 191);">Back to Home</button>
+                    <button onclick="navigateTo('llm.html')" class="btn btn-primary" style="background-color: rgb(188, 188, 65);">LLMs</button>
+                    <button onclick="navigateTo('upsurge.html')" class="btn btn-primary" style="background-color: rgb(237, 84, 84);">Upsurge</button>
+                    <button onclick="navigateTo('usage.html')" class="btn btn-primary" style="background-color: rgb(11, 191, 68);">Usage</button>
+                </div>
+            </p>
+        </div>
+        <script>
+            function navigateTo(href) {
+              document.body.classList.add('fade-in');
+              setTimeout(function() {
+                window.location = href;
+                }, 500);
+            }
+          </script>
+    </body>
+</html>

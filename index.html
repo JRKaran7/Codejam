@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All About AI</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <style>
+        body{
+            padding: 175px;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1s ease-in;
+            color: rgb(51, 115, 115);
+            margin: 0;
+            background-image: url('home.jpg');
+            background-size: cover;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .fade-out{
+            opacity: 0;
+        }
+    </style>
+    <body>
+        <div style="text-align: center;">
+            <h1 style="text-align: center;">All About AI</h1>
+            <break></break>
+            <p style="text-align: center;" container.>Click on any of these to explore</p>
+            <button onclick="navigateTo('upsurge.html')" class="btn btn-info" style="justify-content: center;">Upsurge</button>
+            <button onclick="navigateTo('llm.html')" class="btn btn-warning" style="justify-content: center;">LLMs</button>
+            <button onclick="navigateTo('creation.html')" class="btn btn-success" style="justify-content: center;">Creation</button>
+            <button onclick="navigateTo('usage.html')" class="btn btn-danger" style="justify-content: center;">Usage</button>
+        </div>
+        <script>
+            function navigateTo(href) {
+              document.body.classList.add('fade-out');
+              setTimeout(function() {
+                window.location = href;
+                }, 500);
+            }
+          </script>
+    </body>
+</html>
